@@ -1,0 +1,108 @@
+/* ======= ESTILO GERAL ======= */
+:root {
+  --cor-fundo: #f2faff;
+  --cor-texto: #333;
+  --cor-principal: #22a6b3;
+  --cor-secundaria: #7ed6df;
+  --cor-card: #ffffff;
+}
+
+body.dark-mode {
+  --cor-fundo: #1e272e;
+  --cor-texto: #f1f2f6;
+  --cor-principal: #00a8ff;
+  --cor-secundaria: #2f3640;
+  --cor-card: #353b48;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  background-color: var(--cor-secundaria);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 4px solid var(--cor-principal);
+}
+
+header button {
+  background: var(--cor-principal);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+header button:hover {
+  background: #0984e3;
+}
+
+/* ======= CONTROLES ======= */
+#controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+#controls select,
+#controls input {
+  padding: 10px;
+  border-radius: 25px;
+  border: 2px solid var(--cor-principal);
+  font-size: 15px;
+}
+
+/* ======= GRID DAS PLACAS ======= */
+.board-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.board-card {
+  background: var(--cor-card);
+  border: 2px solid var(--cor-secundaria);
+  border-radius: 15px;
+  padding: 10px;
+  transition: transform 0.2s, background 0.3s;
+  cursor: pointer;
+}
+
+.board-card:hover {
+  background-color: var(--cor-secundaria);
+  transform: scale(1.05);
+}
+
+.board-card img {
+  width: 80px;
+  height: 80px;
+}
+
+.board-card p {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* ======= RODAPÉ ======= */
+footer {
+  margin-top: 40px;
+  background-color: var(--cor-principal);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comunica+</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- 🔝 Cabeçalho -->
+  <header>
+    <h1>🧩 Comunica+</h1>
+    <p>Conectar pelo olhar, comunicar com o coração.</p>
+
+    <!-- 🌗 Botão de alternância de tema -->
+    <button id="themeToggle">🌙 Modo Escuro</button>
+  </header>
+
+  <!-- 🧭 Filtros e Busca -->
+  <section id="controls">
+    <select id="categoryFilter">
+      <option value="todas">Todas as Categorias</option>
+      <option value="emocao">Emoções</option>
+      <option value="necessidade">Necessidades</option>
+      <option value="lugar">Lugares</option>
+      <option value="objeto">Objetos</option>
+    </select>
+
+    <input type="text" id="searchInput" placeholder="Buscar placa...">
+  </section>
+
+  <!-- 🗂️ Seção Principal -->
+  <main>
+    <section id="boards">
+      <h2>Escolha o que você quer dizer 💬</h2>
+      <div class="board-container" id="boardContainer">
+        <!-- As placas serão inseridas via JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <!-- 📞 Rodapé -->
+  <footer>
+    <p>🧠 Comunica+ — Tornando a comunicação mais acessível.</p>
+  </footer>
+
+  <script src="js/boards.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
